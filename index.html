@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="restyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <img src="./Images/SQI logo.jpg" alt="">
+        </div>
+        <h1>SQI COLLEGE OF ICT</h1>
+    </div>
+    
+    <div class="container">
+        <h2>SQI GRADING SYSTEM</h2>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div>
+                <h3>Grading System for NID program (Cyber security)</h3>
+            </div>
+            <div>
+                <label for="english">English Lang and Communication (100mk)</label>
+                <input type="number" id="english" name="english"><br>
+
+                <label for="entrepreneurship">Entrepreneurship (100mk)</label>
+                <input type="number" id="entrepreneurship" name="entrepreneurship"><br>
+
+                <label for="library">Library (100mk)</label>
+                <input type="number" id="library" name="library"><br>
+
+                <label for="statistics">Statistics (100mk)</label>
+                <input type="number" id="statistics" name="statistics"><br>
+
+                <label for="javascript">Introduction to JavaScript (100mk)</label>
+                <input type="number" id="javascript" name="javascript"><br>
+            </div>
+            
+
+            <div class="btn">
+                <button id="total" onclick="calculateTotal()">Total</button>
+                <button onclick="calculateAverage()">Average</button>
+                <button onclick="displayGrade()">Grade</button>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div>
+                <h3>Total</h3>
+            </div>
+            <p id="eng"></p>
+                <p id="entrepreneur"></p>
+                <p id="lib"></p>
+                <p id="maths"></p>
+                <p id="program"></p>
+                <p id="summation"></p>
+            <div>
+                <h3>Average</h3>
+            </div>
+            <p id="midpoint"></p>
+            <div>
+                <h3>Grade</h3>
+            </div>
+            <p id="category"></p>
+        </div>
+    </div>
+</body>
+<script src="scipt.js"></script>
+</html>
